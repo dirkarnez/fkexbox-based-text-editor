@@ -11,3 +11,7 @@ A flexbox approach to bypass weird keyboard behavior on mobile when using text e
 ### Idea
 - the content is stored in a string variable, do rendering to `div`s, cursoring according to some metadata
 - edit the string variable programmatically (on-screen keyboard)
+
+### Reference
+- disable system keyboard
+  - https://github.com/furcan/KioskBoard/blob/main/src/kioskboard.js
