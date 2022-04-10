@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-html {
-	font-family: consolas;
-}
+    <style>
+        html {
+            font-family: consolas;
+        }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
 
-.flex-container > div {
-  font-size: 30px;
-}
+        .flex-container>div {
+            font-size: 30px;
+        }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
 
-.blink_me {
-  animation: blinker 1s linear infinite;
-  width: 2px;
-  background-color: black;
-}
+        .blink_me {
+            animation: blinker 1s linear infinite;
+            width: 2px;
+            background-color: black;
+        }
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-</style>
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<script>
-    function handleClick(e, me) {
-        debugger;
-    	console.log(window.getComputedStyle(me, null).width, e.clientX,  e.clientY)
-    	console.log(me.closest(".flex-container > div"))
-    }
-</script>
+    <script>
+        function handleClick(e, me) {
+            debugger;
+            console.log(window.getComputedStyle(me, null).width, e.clientX, e.clientY)
+            console.log(me.closest(".flex-container > div"))
+        }
+    </script>
 
-<div class="flex-container">
-  <div onclick="handleClick(event, this)">i</div>
-  <div onclick="handleClick(event, this)">n</div>
-  <div onclick="handleClick(event, this)">t</div> 
-  <div class="blink_me"></div>
-  <div onclick="handleClick(event, this)">3</div> 
-  <div class="break">3</div> 
-  <div>3</div> 
-  <div>3</div> 
-  <div>3</div> 
-  <div>3</div> 
-  <div>3</div> 
-    <div class="break">3</div> 
-  <div>3</div> 
-  <div>3</div> 
-  <div>3</div> 
-</div>
-
+    <div class="flex-container">
+        <div onclick="handleClick(event, this)">i</div>
+        <div onclick="handleClick(event, this)">n</div>
+        <div onclick="handleClick(event, this)">t</div>
+        <div class="blink_me"></div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">m</div>
+        <div onclick="handleClick(event, this)">a</div>
+        <div onclick="handleClick(event, this)">i</div>
+        <div onclick="handleClick(event, this)">n</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">{</div>
+        <div class="break"></div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">s</div>
+        <div onclick="handleClick(event, this)">t</div>
+        <div onclick="handleClick(event, this)">d</div>
+        <div onclick="handleClick(event, this)">:</div>
+        <div onclick="handleClick(event, this)">:</div>
+        <div onclick="handleClick(event, this)">c</div>
+        <div onclick="handleClick(event, this)">o</div>
+        <div onclick="handleClick(event, this)">u</div>
+        <div onclick="handleClick(event, this)">t</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">&lt;</div>
+        <div onclick="handleClick(event, this)">&lt;</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">"</div>
+        <div onclick="handleClick(event, this)">H</div>
+        <div onclick="handleClick(event, this)">e</div>
+        <div onclick="handleClick(event, this)">l</div>
+        <div onclick="handleClick(event, this)">l</div>
+        <div onclick="handleClick(event, this)">o</div>
+        <div onclick="handleClick(event, this)">&nbsp;</div>
+        <div onclick="handleClick(event, this)">W</div>
+        <div onclick="handleClick(event, this)">o</div>
+        <div onclick="handleClick(event, this)">r</div>
+        <div onclick="handleClick(event, this)">l</div>
+        <div onclick="handleClick(event, this)">d</div>
+        <div onclick="handleClick(event, this)">!</div>
+        <div onclick="handleClick(event, this)">"</div>
+        <div onclick="handleClick(event, this)">;</div>
+        <div class="break"></div>
+        <div onclick="handleClick(event, this)"></div>
+        <div onclick="handleClick(event, this)"></div>
+        <div onclick="handleClick(event, this)">}</div>
+    </div>
 </body>
+
 </html>
-
-
