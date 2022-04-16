@@ -2,8 +2,12 @@ flexbox-based-text-editor
 =========================
 A flexbox approach to bypass weird keyboard behavior on mobile when using text editors. Intended to be integrated with on-screen keyboard. Under heavy development.
 
+### Reference
+- https://github.com/dirkarnez/highlightjs-playground
+
 ### Why this editor
-- Normally web text editor works with keyboard events. This editor does not mess around with keyboard event at all. And it is easier / make more sense to start from scratch then forking an existing editor.
+- Normally web text editor works with keyboard events. This editor does not mess around with keyboard event at all. And it is easier / make more sense to start from scratch then forking an existing editor. 
+
 
 ### Weird keyboard behavior
 - [Unable to properly type or delete text when using monaco on Android · Issue #48 · microsoft/monaco-editor](https://github.com/microsoft/monaco-editor/issues/48)
